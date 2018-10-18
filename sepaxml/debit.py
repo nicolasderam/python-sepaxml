@@ -14,7 +14,7 @@ class SepaDD(SepaPaymentInitn):
     def __init__(self, config, schema="pain.008.002.02"):
         if "instrument" not in config:
             config["instrument"] = "CORE"
-        super().__init__(config, schema)
+        super(SepaDD, self).__init__(config, schema)
 
     def check_config(self, config):
         """

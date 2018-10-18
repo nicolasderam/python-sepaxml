@@ -4,7 +4,7 @@ from collections import OrderedDict
 from .utils import decimal_str_to_int, int_to_decimal_str, make_msg_id
 
 
-class SepaPaymentInitn:
+class SepaPaymentInitn(object):
 
     def __init__(self, config, schema):
         """

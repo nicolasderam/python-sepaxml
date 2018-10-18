@@ -12,7 +12,7 @@ class SepaTransfer(SepaPaymentInitn):
     root_el = "CstmrCdtTrfInitn"
 
     def __init__(self, config, schema="pain.001.001.03"):
-        super().__init__(config, schema)
+        super(SepaTransfer, self).__init__(config, schema)
 
     def check_config(self, config):
         """
